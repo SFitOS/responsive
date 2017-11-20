@@ -1,0 +1,28 @@
+//* Reponsive Variables ---------------------------------------*/
+
+$wt: 1139px;
+$wm: 559px;
+$wh: 730px;
+
+@mixin breakpoint($class) {
+  @if $class == tablet {
+    @media (max-width: $wt) { @content; }
+  }
+  @if $class == mobile {
+    @media (max-width: $wm) { @content; }
+  }
+  @if $class == minheader{
+    @media (max-width: $wh) { @content; }
+  } 
+}
+// $breakpoint-classes: (small medium large xlarge);
+@include breakpoint(tablet) {
+  max-width: $wt;
+}
+@include breakpoint(mobile) {
+  max-width: $wm;
+}
+
+@include breakpoint(minheader) {
+  max-width: $wh;
+}

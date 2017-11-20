@@ -1,0 +1,95 @@
+.portfolio {
+	background: #ffdd99;
+	padding: 120px 0 100px;
+	h2 {
+		margin: 0 0 50px 0;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		color: #3c4761;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 87px;
+			height: 4px;
+			background: #e5c37f;
+			position: absolute;
+			bottom: -27px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+	p {
+		margin: 0 0 40px 0;
+		text-align: center;
+		color: #3c4761;
+		line-height: 1.389;
+	}
+	.tabs {
+		margin: 0 0 52px 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		@include breakpoint(mobile) {
+			justify-content: space-around;
+		}
+		li {
+			margin: 0 10px 10px 0;
+			background: #ebc985;
+			border-radius: 3px;		
+			&:last-child {
+				margin: 0 0 10px 0;
+			}
+			a {
+				display: block;
+				padding: 10px 27px;
+				font-size: 18px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: #393939;				
+			}
+		}
+		.active {
+			background: #fff;
+		}
+	}
+	.tabs_content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		li {
+			width: 540px;
+			img {
+				display: block;
+				margin: 0 0 32px 0;
+				@include breakpoint(mobile) {
+					width: 95%;
+					margin: 0 auto 32px;	
+				}
+			}
+			figcaption {
+				text-align: center;
+				text-transform: uppercase;
+				margin: 0 0 65px 0;
+			}
+		}
+	}
+	.btn {
+		display: block;
+		margin: 0 auto 10px;
+		height: 70px;
+		width: 293px;
+		color: #fff;
+		font-weight: 600;
+		font-size: 18px;
+		border-radius: 3px;
+		border: 0;
+		outline: none;
+		text-transform: uppercase;
+		background: #17c2a4;
+		border-bottom: 3px solid #14a58c;
+	} 
+}

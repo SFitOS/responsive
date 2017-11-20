@@ -1,0 +1,55 @@
+@import "responsive.scss";
+@import "partials/header.scss";
+@import "partials/welcome.scss";
+@import "partials/services.scss";
+@import "partials/team.scss";
+@import "partials/skills.scss";
+@import "partials/portfolio.scss";
+@import "partials/people_say.scss";
+@import "partials/in_touch.scss";
+@import "partials/footer.scss";
+
+*,*:after,*:before {box-sizing: border-box;}
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+body {
+	margin: 0;
+	min-width: 100%;
+	max-width: 100%;
+	font: 400 18px/1 'Titillium Web', sans-serif;
+	
+}
+.layout {
+	width: 1140px;
+	margin: 0 auto;
+	@include breakpoint(tablet) {
+		width: 100%;
+		padding: 0 5%;
+	}
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.blue {
+	color: #30bae7;
+}
+.btn {
+	&:hover {
+		color: red;
+	}
+}

@@ -1,0 +1,67 @@
+.skills {
+	background: #fff;
+	padding: 120px 0 0 0;
+	h2 {
+		margin: 0 0 50px 0;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		color: #3c4761;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			width: 87px;
+			height: 4px;
+			background: #dfe8ed;
+			position: absolute;
+			bottom: -27px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+	p {
+		margin: 0 0 85px 0;
+		text-align: center;
+		color: #3c4761;
+		line-height: 1.389;
+	}
+	ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin: 0 0 120px 0;
+		li {
+			width: 200px;
+			padding: 0 20px;
+			margin: 0 0 125px 0;
+			@include breakpoint(tablet){
+				width: 350px;
+				margin: 0 0 50px 0;
+				
+			}
+			.progress {
+				width: 160px;
+				height: 160px;
+				margin: 0 auto;
+				.c100 {
+					font-size: 160px;
+					margin: 0;
+					background: #dfe8ed;
+					&:after {
+						background: #ffffff;
+					}
+				}
+			}
+			h3 {
+				font-weight: 700;
+				font-size: 24px;
+				text-transform: uppercase;
+				color: #3c4761;
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+#header {
+	padding: 55px 0 0 0;
+	background: #87509c;
+	.layout {
+		strong.left{
+			width: 140px;
+			margin: 0 0 25px 60px;
+			.logo {
+				display: block;
+				text-indent: -999999px;
+				width: 117px; height: 37px;
+    			background: url(../images/css_sprites.png) -10px -10px;
+			}@include breakpoint(mobile) {
+				align-self: center;
+			}@include breakpoint(minheader) {
+				margin: 0 0 10px 0;
+			}
+		}
+		nav.right {
+			max-width: 850px;
+			padding: 5px 0 0 0;
+			margin: 0 10px 25px 0px;
+			@include breakpoint(mobile) {
+				float: none;
+				clear: both;
+				margin: 0 0 25px 0;
+			}
+			ul {
+				@include breakpoint(mobile) {
+					float: none;
+					clear: both;	
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-around;
+				}
+			}
+			li {
+				display: block;
+				margin: 0 10px 0 0;
+				@include breakpoint(mobile) {
+					margin: 0;
+				}
+				a {
+					display: block;
+					padding: 8px 15px;
+					text-transform: uppercase;
+					font-size: 16px;
+					color: #fff;
+					@include breakpoint(minheader) {
+						margin: 0 auto;
+					}
+				}
+				&:hover {
+					background: #643a79;
+					border-radius: 3px;
+				}
+			}
+		}
+	}
+	.nav-flex{
+	@include breakpoint(minheader) {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	}
+}
