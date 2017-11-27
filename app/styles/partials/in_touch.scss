@@ -1,6 +1,9 @@
 .in_touch {
 	background: #3c5499;
 	padding: 120px 0 115px;
+	@include breakpoint(mobile) {
+		padding: 60px 0 0 0;
+	}
 	h2 {
 		margin: 0 0 50px 0;
 		text-align: center;

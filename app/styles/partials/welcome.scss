@@ -1,6 +1,9 @@
 .welcome {
 	background: #87509c;
 	padding: 120px 0;
+@include breakpoint(mobile) {
+	padding: 40px 0;
+}
 	h1 {
 		color: #f7f3ea;
 		font-size: 42px;
